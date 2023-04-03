@@ -7,21 +7,22 @@ class Product {
     protected $price;
     protected $name;
     protected $type;
-    protected Category $category;
+    public Category $category;
 
-    function __construct($type, $_category) {
+
+    function __construct($_type, Category $_category) {
 
         $this->type = $_type;
         $this->category = $_category;
     }
 
-    public function get_category() {
-        return $this->category;
-    }
+    // public function get_category() {
+    //     return $this->category;
+    // }
 
-    public function set_category($new_value) {
-        $this->category = $new_value;
-    }
+    // public function set_category($new_value) {
+    //     $this->category = $new_value;
+    // }
 
     public function get_type() {
         return $this->type;

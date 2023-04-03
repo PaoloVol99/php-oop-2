@@ -2,8 +2,9 @@
 
 require_once __DIR__ . "/Food.php";
 require_once __DIR__ . "/Toy.php";
+require_once __DIR__ . "/Product.php";
 
-$food1 = new Food('nome', '13,20', 'cat', 'lorem ipsum ciao ciao ciao');
+$food1 = new Food('nome', '10', 'gatto', 'ciao', 'ingredienti');
 
 var_dump($food1);
 

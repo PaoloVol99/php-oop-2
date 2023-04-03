@@ -1,22 +1,26 @@
 <?php
 
 require_once __DIR__ . '/Product.php';
+require_once __DIR__ . '/Category.php';
 
 class Food extends Product {
     
     protected $description;
-    protected $ingredients;
     protected $name;
     protected $price;
     protected $image;
 
-    function __construct($_name, $_price, $_category, $ingredients) {
+    protected $ingredients;
+    
+    function __construct($_name, $_price, $_category, $_ciao, $_ingredients) {
 
-        parent::__construct('Food', $_category);
+        parent::__construct('Food', new Category($_category, $_ciao));
 
         $this->name = $_name;
         $this->price = $_price;
         $this->ingredients = $_ingredients;
+
+
     }
 
     public function get_name() {

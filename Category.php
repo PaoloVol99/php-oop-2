@@ -1,10 +1,12 @@
 <?php
 
 class Category {
-    protected $category;
+    public $category;
+    public $ciao;
 
-    function __construct($category) {
-        $this->category = $category;
+    function __construct($_category, $_ciao) {
+        $this->category = $_category;
+        $this->ciao = $_ciao;
     }
 }
 
